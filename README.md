@@ -1,2 +1,2 @@
 # VR-Based_Product-Evaluation-System
-This repository contains a customizable Unity project designed for evaluating virtual product prototypes. It enables the collection of subjective data through a self-report questionnaire (semantic differential), along with eye-tracking and trajectory data. Further instructions can be found as a PDF file inside the repository main folder.
+This repository contains a customizable Unity project for evaluating virtual product prototypes. It facilitates the collection of subjective data via a self-report questionnaire (semantic differential), as well as eye-tracking and trajectory data. Detailed instructions are provided in a PDF file located in the main folder of the repository.
