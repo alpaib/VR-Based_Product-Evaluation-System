@@ -1,0 +1,1 @@
+This is where CSV files for eye-tracking, position and semantic differential data is stored when using Quest Link.
