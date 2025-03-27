@@ -6,12 +6,7 @@ using System.IO;
 public class PositionRecorder : MonoBehaviour
 {
     [Header("Player")]
-    public GameObject player;
-
-    [Header("Frequence (hz)")]
-    [Tooltip("In hertz)")]
-    public int frequence = 120;
-    private float realFrequency;    
+    public GameObject player;   
 
     [Header("Export data to HMD?")]
     public bool toHMD = false;
@@ -23,6 +18,9 @@ public class PositionRecorder : MonoBehaviour
     private List<float> posX = new();
     private List<float> posY = new();    
     private bool dataAvailable = false;
+
+    private int frequence = 120;
+    private float realFrequency;
 
     void Start()
     {

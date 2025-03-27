@@ -4,9 +4,7 @@ using System.IO;
 using UnityEngine;
 
 public class EyeTrackingRecorder : MonoBehaviour
-{
-    
-
+{    
     [Header("Blink")]
     public OVRFaceExpressions faceExpression;
     public OVRFaceExpressions.FaceExpression leftEyeBlink;
@@ -15,12 +13,7 @@ public class EyeTrackingRecorder : MonoBehaviour
     private float weightR;
 
     [Header("Volumes of interest")]
-    public GameObject[] volumesOfInterest;
-
-    [Header("Frequence (hz)")]
-    [Tooltip("In hertz)")]
-    public int frequence = 120;
-    private float realFrequency;
+    public GameObject[] volumesOfInterest;    
    
     [Header("Export data to HMD?")]
     public bool toHMD = false;
@@ -30,6 +23,9 @@ public class EyeTrackingRecorder : MonoBehaviour
 
     private List<string> voi = new();
     private string filename;
+
+    private int frequence = 120;
+    private float realFrequency;
 
     void Start()
     {
