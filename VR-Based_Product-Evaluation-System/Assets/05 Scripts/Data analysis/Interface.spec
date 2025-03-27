@@ -5,8 +5,11 @@ a = Analysis(
     ['Interface.py'],
     pathex=[],
     binaries=[],
-    datas=[('DrawPosition.py', '.'), ('PositionHeatmap.py', '.'), ('EyeTracking.py', '.')],
-    hiddenimports=[],
+    datas=[('DrawPosition.py', '.'), 
+       ('PositionHeatmap.py', '.'), 
+       ('EyeTracking.py', '.')
+    ],
+    hiddenimports=['matplotlib.pyplot', 'matplotlib.image', 'pandas', 'os', 'sys', 'seaborn'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
