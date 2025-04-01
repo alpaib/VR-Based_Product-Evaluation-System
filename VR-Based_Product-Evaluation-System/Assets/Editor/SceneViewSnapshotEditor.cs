@@ -10,11 +10,10 @@ public class SceneViewSnapshotEditor : Editor
 
         SceneViewSnapshot sceneViewSnapshot = (SceneViewSnapshot)target;
 
-        // Agregar un botón de captura al Editor
-        if (GUILayout.Button("Capturar Snapshot"))
+        if (GUILayout.Button("CAPTURE"))
         {
-            sceneViewSnapshot.CaptureScreenshot(); // Llamar a la función de captura
-            Debug.Log("Captura realizada desde el Editor.");
+            sceneViewSnapshot.CaptureScreenshot();
+            Debug.Log("Capture done from Editor.");
         }
     }
 }
