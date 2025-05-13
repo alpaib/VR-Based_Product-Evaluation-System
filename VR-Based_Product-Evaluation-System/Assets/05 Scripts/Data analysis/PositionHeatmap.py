@@ -53,4 +53,4 @@ for csv_filename in csv_files:
 
     plt.savefig(output_filename, dpi=300, bbox_inches='tight', transparent=True)
 
-plt.show()
+# plt.show()

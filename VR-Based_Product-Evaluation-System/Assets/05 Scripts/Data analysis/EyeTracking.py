@@ -26,14 +26,14 @@ for file in csv_files:
 
     if 'Volume' in df.columns:
         for i in range(1, len(df)):
-            if df.at[i, 'Volume'] == 'Blink':
+            if df.at[i, 'Volume'] == 'blink':
                 df.at[i, 'Volume'] = df.at[i - 1, 'Volume']
                 j = i + 1
-                while j < len(df) and df.at[j, 'Volume'] == 'Blink':
+                while j < len(df) and df.at[j, 'Volume'] == 'blink':
                     df.at[j, 'Volume'] = df.at[i - 1, 'Volume']
                     j += 1
         
-        print(f"DataFrame after Blink processing:\n{df.head()}")
+        print(f"DataFrame after blink processing:\n{df.head()}")
 
         output_file_path = os.path.join(csv_folder, file.replace('.csv', '-PP.csv'))
         
@@ -47,7 +47,7 @@ for file in csv_files:
         for index, row in df.iterrows():
             volume = row['Volume']
             
-            if volume != 'Blink':
+            if volume != 'blink':
                 if volume != last_value:
                     if last_value is not None:
                         time_data[last_value] = time_data.get(last_value, 0) + current_time * time_per_sample
