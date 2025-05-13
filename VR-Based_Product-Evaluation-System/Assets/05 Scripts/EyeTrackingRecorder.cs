@@ -91,7 +91,7 @@ public class EyeTrackingRecorder : MonoBehaviour
             //Blink detection
             if (weightL >= 0.6f && weightR >= 0.6f)
             {
-                voi.Add("blink");
+                voi.Add("Blink");
 
                 //isHovered should be false for each volume of interest
                 for (int a = 0; a < volumesOfInterest.Length; a++)
